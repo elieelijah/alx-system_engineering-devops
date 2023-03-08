@@ -1,2 +1,2 @@
 #!/bin/bash
-subdir=$(dirname "$PWD") (find . -maxdepth 1 -type f -name "*.html" -newer "$subdir" -exec cp -n '{}' "$subdir" \|)
+find . -maxdepth 1 -type f -name "*.html" -newer $(dirname "$PWD")/ | xargs -I{} cp -n {} $(dirname "$PWD")
