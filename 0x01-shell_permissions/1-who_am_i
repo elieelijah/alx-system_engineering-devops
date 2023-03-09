@@ -1,2 +1,2 @@
 #!/bin/bash
-The effective username is $USER
+$USER
