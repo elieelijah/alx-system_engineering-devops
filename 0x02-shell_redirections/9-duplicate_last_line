@@ -1,2 +1,2 @@
 #!/bin/bash
-sed -n  iacta >> iacta
+sed -n '$p' iacta >> iacta
