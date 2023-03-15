@@ -1,2 +1,2 @@
 #!/bin/bash
-paste -sd '' | sed 's/\([[:upper:]]\)[[:lower:]]*/\1/g'
+cut -c 1 | paste -s -d ''
