@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1 | grep -n '^' | grep -E '[02468]:' | cut -d':' -f2
+ls -1v | grep -v "/\|README" | tail -n +2 | sort -r | head -n 10
