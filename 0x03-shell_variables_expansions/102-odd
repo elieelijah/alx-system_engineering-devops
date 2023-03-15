@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1v | grep -v "/\|README" | tail -n +2 | sort -r | head -n 10
+paste -d, - - | cut -d, -f1
